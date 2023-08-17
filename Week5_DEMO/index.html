@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Week 5 DEMO | Tables & Forms</title>
+
+
+</head>
+
+<body>
+    <h1>Basic Form Demo</h1>
+
+        <!--Let browser know we are creating a form-->
+
+
+    <form>
+
+        <!--Labels are used to match with the input elements-->
+        <!--'for' attribute connects lables with the input values
+        (matchings 'name' and 'id' values in the <input>)-->
+
+        <label id="firstName">First Name:</label>
+
+        <input type="text" name="firstName" id="firstName">
+
+        <br>
+
+        <label id="lastName">Last Name:</label>
+
+        <input type="text" name="lastName" id="lastName">
+
+        <br>
+
+        <label id="age">Age:</label>
+
+        <input type="text" name="age" id="age">
+
+    </form>
+
+
+        <!--THIS IS THE WAY-->
+
+        <H2>Form using a Table</H2>
+
+        <form>
+            <!--table goes immediately in the form-->
+            <table>
+
+                <!--Table head <th> for column header-->
+
+                <tr> <!--Table Row-->
+
+                    <!--left column [LABLES]-->
+                    <td>
+                        <h2>Questions</h2>
+
+
+                
+
+                        <h2>Answers</h2>
+
+                        <label id="lastName">Last Name:</label>
+
+                        <input type="text" name="lastName" id="lastName">
+
+                        
+                        <label id="firstName">First Name:</label>
+
+                        <input type="text" name="firstName" id="firstName">
+                    </td>
+
+                    <tr>
+                        <td>
+                            <label for="email">Email:</label>
+
+                            <input type="email" name="email" id="email"
+                            placeholder="you@email.com">
+                            
+                            <td>
+                                <label for="comments">Comments:</label>
+                            </td>
+                            
+                            <td>
+    
+                                <textarea name="Comments" id="comments" rows="10"
+                                cols="20" placeholder="Enter your comment here....."maxlength="100"></textarea>
+                            
+                            </td>
+                            
+                            <td>
+                                <label for="faveColor">Pick your favorite Color:
+
+                                </label>
+                            </td>
+
+                            <td>
+                                <select name="faveColor"
+                                id="faveColor">
+                            
+                                <option value="red">Red</option>
+                                <option value="green">Green</option>
+                                <option value="blue">Blue</option>
+                            
+                                </select>
+
+
+
+                            </td>
+
+
+                        </td>
+
+                    </tr>
+
+
+
+                </tr>
+                <!--Table body <tbody> REQUIRED for table content-->
+                
+
+
+                <!--Table footer <tfoot> for summations ect-->
+                    
+            </table>
+
+            <tbody>
+            <!--Table head <th> for column header-->
+                <tr> <!--Table Row-->
+
+                    <!--left column [LABLES]-->
+                    <td>
+                        <h2>Questions</h2>
+
+                    </td>
+
+                    <td>
+
+                        <h2>Answers</h2>
+
+                    </td>
+                
+                    <td>
+                        <input type="radio" name="study"
+                        value="se">Software Engineering
+
+                        <input type="radio" name="study"
+                        value="cyb"> Cybersecurity
+
+                        <input type="radio" name="study" value="wd">Web
+                        Development <br>
+
+
+                    </td>
+
+
+
+                </tr>
+
+            </tbody>
+
+        </form>
+
+
+    </form>
+
+
+
+    
+</body>
+</html>
