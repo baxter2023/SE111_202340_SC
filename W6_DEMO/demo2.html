@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name ="author" content="Stephen Colprit">
+    <meta name="description" content="W6 Demo 2 Intro to Java Script">
+    
+    <title>Week 6 DEMO 2 | Javascript</title>
+
+
+
+
+</head>
+<body>
+    
+    <h1> Week 6 - Secondary Javascript Demo</h1>
+    <h3><i>Conditions & Functions</i></h3>
+
+    <!--In Document javascript-->
+
+    <script>
+        // in here we write javascripts
+        // prompt user for a yes or no response
+
+        var pref = prompt (`Welcome to Good Burger, home of the good burger, may I take your order? \nType "Yes" or "No"`)
+
+        //function below checks prompt/input value supplied by user then returns a dining preference type
+
+        //function definition below
+        function checkDining(_pref) 
+        {
+            //conditions or conditional statements are held inside of ( ) in javascript
+            //=== is exactly equal in both value AND data type
+            if(_pref.toLowerCase()=== `yes`)
+            {
+                //want to order
+                var dining = prompt(`Would you like to dine in or take out? \nType "in" or "out"`)
+
+                if (dining.toLowerCase() ===`in`)
+
+            
+            
+            else if (_pref.toLowerCase() === `no`)
+        
+            
+            
+            else 
+            
+            {
+                //didnt follow directions / unexpected input value
+                alert (`UH OH! Invalid Entry! \nPlease Reload and re-read Directions`)
+            }
+        }
+
+        //call checkDining to find value / what the user wants to do
+        var decision = checkDining(pref)
+
+        if (decision == 0)
+        {
+            alert(`Okay. Goodbye.`)
+        }
+        else if (decision == `bad`)
+         {
+            alert (`Please RELOAD`)
+         }
+         else{
+            alert (`Please tell me your order...`)
+         }
+
+
+
+
+        
+    </script>
+
+
+
+</body>
+</html>

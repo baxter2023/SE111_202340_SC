@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name ="author" content="Stephen Colprit">
+    <meta name="description" content="W6 Demo intro to Java Script">
+    
+    <title>W6 | Javascript Intro</title>
+
+<!-- In document CSS-->
+
+<style>
+    /* we are writing in CSS*/
+
+    body {
+        background-color: aqua;
+    }
+
+</style>
+
+</head>
+<body>
+    <h1> Week 6 Intro Demo | Javascript</h1>
+
+    <script>
+        // in here, we are writing in javascript
+
+        //creating variables inside javascript -- keyword 'var'
+        var num1 = 10
+        var num2 = 7
+
+        //cannot use num1 or num2 until: they have been declared & assigned value [DEFINED]
+        var sum = num1 + num2
+
+        //alert () allows for a pop up in the browser page to display data to the user
+        //alert () --> pythons print() / OUTPUT
+
+        // the user can see this in the page
+        //alert ("Hello World")
+
+        // for development - only accessible in console via developer tools
+        console.log ("Hi Universe")
+
+
+        // ` ` these are tick marks not single quoutes, denotes literal strings, 
+        // works similar to the .format ()
+        //${VARNAME} inside of `` to display stored value mixed with string message
+
+        console.log (`The Sum is: \n${sum}`)
+
+        //escape sequences also work inside of strings --> \n [new line]
+
+        // prompt () asks user to enter data - creates a pop-up so it works
+        //similarly to alert () prompt () --> pythons input()
+
+        var fname = prompt("Enter Your Name: ")
+
+        alert (`Hi there ${fname}`)
+
+        var age = Number(prompt (`Enter Your Age:`))
+
+        var dogYears = (age * 7).toFixed(2)
+
+        console.log (`In Dog Years You are: ${dogYears}yo`)
+
+        //if you run into string/number mixing issues --> cast as a number
+        // num = Number(num) //var num = Number(prompt("Enter a number:"))
+        console.log(`Your Age is: ${age.toFixed(2)}`)
+
+
+    </script>
+
+
+    
+</body>
+</html>
