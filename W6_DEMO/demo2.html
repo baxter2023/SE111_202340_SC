@@ -14,68 +14,131 @@
 
 </head>
 <body>
-    
-    <h1> Week 6 - Secondary Javascript Demo</h1>
+
+    <h1>Week 6 - Secondary Javascript Demo</h1>
+
     <h3><i>Conditions & Functions</i></h3>
 
-    <!--In Document javascript-->
+    <!--in document js-->
 
     <script>
-        // in here we write javascripts
-        // prompt user for a yes or no response
 
-        var pref = prompt (`Welcome to Good Burger, home of the good burger, may I take your order? \nType "Yes" or "No"`)
+        //in here we write in js
 
-        //function below checks prompt/input value supplied by user then returns a dining preference type
+        //prompt user for yes or no response
 
-        //function definition below
+        var pref = prompt(`Welcome to Good Burger, home of the good burger, may I take your order? \nType "yes" or "no"`)
+
+        //functio below checks prompt/input value supplied by user and then returns a dining preference type 
+
+        //function definition below 
+
         function checkDining(_pref) 
+
         {
-            //conditions or conditional statements are held inside of ( ) in javascript
+
+            //conditions or conditional statements are held inside of ( ) in js
+
             //=== is exactly equal in both value AND data type
-            if(_pref.toLowerCase()=== `yes`)
+
+            if (_pref.toLowerCase() === `yes`)
+
             {
+
                 //want to order
-                var dining = prompt(`Would you like to dine in or take out? \nType "in" or "out"`)
 
-                if (dining.toLowerCase() ===`in`)
+                var dining = prompt(`Would you like to dine in or take out?\nType "in" or "out"`)
 
-            
-            
-            else if (_pref.toLowerCase() === `no`)
-        
-            
-            
-            else 
-            
-            {
-                //didnt follow directions / unexpected input value
-                alert (`UH OH! Invalid Entry! \nPlease Reload and re-read Directions`)
+                if (dining.toLowerCase() === `in`)
+
+                {
+
+                    //dining in
+
+                    return dining.toLowerCase()
+
+                }
+
+                else if (dining.toLowerCase() === `out`)
+
+                {
+
+                    //take out 
+
+                    return dining.toLowerCase()
+
+                }
+
+                else
+
+                {
+
+                    //invalid entry
+
+                    return `bad` //bad value
+
+                }
+
             }
+
+            else if (_pref.toLowerCase() === `no`)
+
+            {
+
+                //dont want to order
+
+                alert(`You have poor taste.`)
+
+                return 0
+
+            }
+
+            else 
+
+            {
+
+                //didnt follow directions / unexpected input value
+
+                alert(`UH OH! Invalid Entry!\nPlease reload and re-read directions :]`)
+
+                return `bad`
+
+            }
+
         }
 
-        //call checkDining to find value / what the user wants to do
+        //call checkDining to find value / what user wants to do 
+
         var decision = checkDining(pref)
 
         if (decision == 0)
+
         {
-            alert(`Okay. Goodbye.`)
+
+            alert(`Okay, goodbye.`)
+
         }
+
         else if (decision == `bad`)
-         {
-            alert (`Please RELOAD`)
-         }
-         else{
-            alert (`Please tell me your order...`)
-         }
 
+        {
 
+            alert(`Please reload`)
 
+        }
 
-        
+        else 
+
+        {
+
+            alert(`Plz tell me your order...`)
+
+        }
+
     </script>
 
-
+    
 
 </body>
+
 </html>
