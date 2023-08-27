@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name ="author" content="Stephen Colprit">
+    <meta name="description" content="W6 JavaScript Pay Calculator">
+   
+   
+   
+    <title>Week 6 | JavaScript Pay Calculator</title>
+
+
+</head>
+<body>
+    <h1>Pay Calculator</h1>
+
+<script>
+
+    var hourlyPay = Number(prompt(`Please Enter your hourly pay:`));
+    var hoursWorked = Number(prompt(`Please Enter the hours worked for two week pay period:`));
+    
+
+    var taxRate = 0.20;
+
+    var grossPay = hourlyPay * hoursWorked;
+    var grossPay = (hourlyPay * hoursWorked).toFixed(2)
+    console.log (`The Gross Pay is: \n$${grossPay}`)
+
+    var uncleSamShare = grossPay * taxRate;
+    var uncleSamShare = (grossPay * taxRate).toFixed(2)
+    console.log (`Uncle Sams Share is: \n$${uncleSamShare}`)
+
+    var netPay = grossPay - uncleSamShare;
+    var netPay = (grossPay - uncleSamShare).toFixed(2)
+    var sum = netPay
+
+    console.log (`The Net Pay is: \n$${sum}`)
+    alert (`Gross Pay is: $ ${grossPay}`)
+    alert (`Uncle Sams Share is: $ ${uncleSamShare}`)
+    alert (`Net Pay is: $ ${netPay}`)
+
+</script>
+
+</body>
+</html>
