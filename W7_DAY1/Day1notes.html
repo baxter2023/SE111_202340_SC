@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name ="author" content="Stephen Colprit">
+    <meta name="description" content="W7 Demo Java Script">
+    
+    <title>Week 7 | Variable Scope</title>
+
+        <style>
+            h1 {
+                color: blue;
+            }
+
+
+        </style>
+
+
+
+
+
+
+</head>
+<body>
+    <h1>Hello World!</h1>
+
+    <h3 class="fancy"> This is August 28th 20023</h3>
+    
+    <div>
+        <h1 id="header">
+             This is a header
+        </h1>
+        <div id="nav">
+              This is the nav
+        </div>
+        
+        <p id="h">Hello Universe!</p>
+        <p id="gd">Good Day!</p>
+        <P id="goodbye">~ Goodbye ~</P>
+        
+        <script>
+            var p = document.querySelector(`#gb`)
+            console.log(p) //logs the tag into the console formatted as HTML
+            
+            p.id = "goodbye"
+
+            console.log(p)
+
+
+        </script>
+    </div>
+
+
+
+
+
+
+    <script>
+        //Write in javascript
+
+        
+        function add(_a, _b)
+        {
+            var sum = _a + _b
+            if(sum < 50)
+            {
+            let size = "small"
+            return size
+            }
+            else
+            {
+            let size = "big"
+            return size
+            }
+            {
+            
+            alert(size)
+            }
+            return sum
+            
+        }
+
+        console.log(add(5,2))
+        
+
+    </script>
+
+
+
+
+    
+</body>
+</html>
