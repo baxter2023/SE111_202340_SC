@@ -84,19 +84,19 @@
             
             var fname = document.querySelector(`#first`).value
             var lname = document.querySelector(`#last`).value 
-            var hours = Number(documnet.querySelector(`#hours`).value) 
+            var hours = Number(document.querySelector(`#hours`).value) 
             var rate = Number(document.querySelector(`#rate`).value)   
 
 
             //console.log() all four values
             
-            console.log(`First Name:`+ first);
-            console.log(`Last Name:`+ last);
+            console.log(`First Name:`+ fname);
+            console.log(`Last Name:`+ lname);
             console.log(`Hours Worked:` + hours.toFixed(2))
             console.log(`Hourly Rate:` + rate.toFixed(2))
 
             //add the first and last name values together and store into a new variable called 'full' holding the user's full name
-            var full = first + " " + last;
+            var full = fname + " " + lname;
 
             //console.log() the full name value
             console.log(`Full Name:` + full)
@@ -116,7 +116,7 @@
             var taxRate = 0.2
             var taxAmount = gross * taxRate
             var net = gross - taxAmount
-            net = Number(net.tofixed(2))
+            net = Number(net.toFixed(2))
 
             //console.log() all three processed values, rounded to the second decimal place
             console.log(`Gross Pay:`,gross.toFixed(2))
@@ -139,7 +139,7 @@
 
 
             //edit the innerHTML of the #check element (now the 'check' js var) to hold a literal string with the following values: gross pay, tax amount, net pay. All three values should be rounded to the second decimal place.  Use <br> to break onto a new line for each value
-            check.innterHTML = `GROSS PAY: $${gross.toFixed(2)}<br> TAX AMOUNT: $${taxAmount.toFixed(2)}<br>NET PAY: $${net.toFixed(2)}`
+            check.innerHTML = `GROSS PAY: $${gross.toFixed(2)}<br> TAX AMOUNT: $${taxAmount.toFixed(2)}<br>NET PAY: $${net.toFixed(2)}`
 
 
             //add a 'click' event listener to the #submit HTML element (HINT: this is the first step in the <script> )
